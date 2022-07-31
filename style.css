@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    
+    background-color: black;
+}
+#gameBoard{
+    background-color: azure;
+    display: grid;
+    height: 100vmin;
+    width: 100vmin;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+.snake{
+  background-color: greenyellow;
+  border: .25vmin solid #333;
+}
+.food{
+  background-color: red;
+  border: .25vmin solid black;
+}
+.highscore{
+    display: flex;
+    background-color: greenyellow;
+    opacity: 75%;
+    position: absolute;
+    padding: 10px;
+    right: 65px;
+    top: 10px;
+}
